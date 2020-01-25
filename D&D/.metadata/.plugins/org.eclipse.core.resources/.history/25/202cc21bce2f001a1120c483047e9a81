@@ -1,0 +1,110 @@
+
+public class Personaggio {
+	
+	public String nome;
+	public String classe;
+	public String razza;
+	public float puntivita;
+	public boolean difesa;
+	public float tiropercolpire;
+	public float arma;
+	public float armatura;
+	public float livello;
+	public int forza;
+	public int destrezza;
+	public int costituzione;
+	public int intelligenza;
+	public int saggezza;
+	public int carisma;
+	public int modforza;
+	public int moddestrezza;
+	public int modcostituzione;
+	public int modintelligenza;
+	public int modsaggezza;
+	public int modcarisma;
+	
+	public Personaggio(String n, String c, String r, float hp, boolean d, float txc, float s, float a){
+		nome=n;
+		classe=c;
+		razza=r;
+		puntivita=hp;
+		difesa=d;
+		tiropercolpire=txc;
+		arma=s;
+		armatura=a;
+	}
+	
+	public void calcoloLivello() {
+		int liv=(int)(Math.random()*19+1);
+		System.out.println("Il livello del tuo personaggio è di: " +liv);
+	}
+	
+	public void calcoloForza() {
+		int d1=(int)(Math.random()*7+1);
+		int d2=(int)(Math.random()*7+1);
+		int d3=(int)(Math.random()*7+1);
+		p1.forza=d1+d2+d3;
+		
+	}
+	
+	public void calcoloDestrezza() {
+		int d1=(int)(Math.random()*7+1);
+		int d2=(int)(Math.random()*7+1);
+		int d3=(int)(Math.random()*7+1);
+		p1.destrezza=d1+d2+d3;
+	}
+	
+	public void calcoloCostituzione() {
+		int d1=(int)(Math.random()*7+1);
+		int d2=(int)(Math.random()*7+1);
+		int d3=(int)(Math.random()*7+1);
+		costituzione=d1+d2+d3;
+	}
+	
+	public void calcoloIntelligenza() {
+		int d1=(int)(Math.random()*7+1);
+		int d2=(int)(Math.random()*7+1);
+		int d3=(int)(Math.random()*7+1);
+		intelligenza=d1+d2+d3;
+	}
+	
+	public void calcoloSaggezza() {
+		int d1=(int)(Math.random()*7+1);
+		int d2=(int)(Math.random()*7+1);
+		int d3=(int)(Math.random()*7+1);
+		saggezza=d1+d2+d3;
+	}
+	
+	public void calcoloCarisma() {
+		int d1=(int)(Math.random()*7+1);
+		int d2=(int)(Math.random()*7+1);
+		int d3=(int)(Math.random()*7+1);
+		carisma=d1+d2+d3;
+	}
+	
+	public int calcolomodForza(int forza) {
+		modforza=(forza-10)/2;
+		return modforza;
+	}
+	
+	public int calcolomodDestrezza(int destrezza) {
+		moddestrezza=(destrezza-10)/2;
+		return moddestrezza;
+	}
+	
+	public int calocolomodCostituzione(int costituzione) {
+		modcostituzione=(costituzione-10)/2;
+		return modcostituzione;
+	}
+	
+	public int calcolomodIntelligenza(int intelligenza) {
+		modintelligenza=(intelligenza-10)/2;
+		return modintelligenza;
+	}
+	
+	
+	
+	
+	
+
+}
